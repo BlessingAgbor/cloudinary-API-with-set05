@@ -1,5 +1,7 @@
+require('dotenv').config();
+const url=process.env.MYLOCAL_DB
 const mongoose = require('mongoose')
-const url= "mongodb://localhost/schoolAPI"
+
 mongoose.connect(url).then(()=> {
     console.log("connected to mongoose successfully");
 }).catch((err)=> {

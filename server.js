@@ -1,6 +1,7 @@
 require('./config/mongo')
 const express = require ('express')
-const port = 2000;
+const port = process.env.PORT ||2000;
+console.log(port);
 const app= express()
 const allRoute= require('./router/router')
 app.use(express.json())

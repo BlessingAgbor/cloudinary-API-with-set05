@@ -41,7 +41,6 @@ const schoolUpdate= async(req, res) => {
         cloud_id: cloud.public_id,
         cloud_url: cloud.secure_url,
         yearEstablished: req.body.yearEstablished
-
         }, {new:true})
         
         res.status(201).json({
