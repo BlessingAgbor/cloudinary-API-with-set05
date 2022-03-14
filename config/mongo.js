@@ -1,5 +1,5 @@
 require('dotenv').config();
-const url=process.env.MYLOCAL_DB
+const url=process.env.MY_ATLAS_DB
 const mongoose = require('mongoose')
 
 mongoose.connect(url).then(()=> {
