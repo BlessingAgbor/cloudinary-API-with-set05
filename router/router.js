@@ -5,15 +5,16 @@ const {schoolCreate, getAllSchool, schoolUpdate, getOneSchool, deleteAllSchools,
 
 const router= express.Router()
 
-router
-    .route("/schools")
-    .post(imageUploader, schoolCreate)
-    .get(getAllSchool)
-    .delete( deleteAllSchools)
+router.get("/get", getAllSchool)
+// router
+//     .route("/schools")
+//     .post(imageUploader, schoolCreate)
+//     .get(getAllSchool)
+//     .delete( deleteAllSchools)
 
-router
-    .route("/school/:id")
-    .get(getOneSchool)
-    .patch(imageUploader, schoolUpdate)
-    .delete(deleteOneSchool)
+// router
+//     .route("/school/:id")
+//     .get(getOneSchool)
+//     .patch(imageUploader, schoolUpdate)
+//     .delete(deleteOneSchool)
 module.exports =router;
