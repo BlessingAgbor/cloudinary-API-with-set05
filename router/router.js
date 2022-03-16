@@ -5,10 +5,10 @@ const {schoolCreate, getAllSchool, schoolUpdate, getOneSchool, deleteAllSchools,
 
 const router= express.Router()
 
-router.get("/get", getAllSchool)
-router.post("/post",imageUploader, schoolCreate)
-router.delete("/delete",deleteAllSchools)
-router.get("get/:id", getOneSchool)
-router.patch("patch/:id",imageUploader, schoolUpdate)
-router.delete("delete/:id", deleteOneSchool)
+router.get("/getschool", getAllSchool)
+router.post("/postschool",imageUploader, schoolCreate)
+router.delete("/deleteschool",deleteAllSchools)
+router.get("getschool/:id", getOneSchool)
+router.patch("patchschool/:id",imageUploader, schoolUpdate)
+router.delete("deleteschool/:id", deleteOneSchool)
 module.exports =router;
