@@ -11,4 +11,4 @@ route.delete("/deleteschool",deleteAllSchools)
 route.get("getschool/:id", getOneSchool)
 route.patch("patchschool/:id",imageUploader, schoolUpdate)
 route.delete("deleteschool/:id", deleteOneSchool)
-module.exports =router;
+module.exports =route;
