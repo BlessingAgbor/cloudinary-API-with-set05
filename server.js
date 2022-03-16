@@ -5,8 +5,7 @@ console.log(port);
 const app= express()
 const allRoute= require('./router/router')
 app.use(express.json())
-
-app.use("api", allRoute)
+app.use('/api', allRoute )
 app.get("/", (req, res)=> {
     res.end("welcome to my database where i have stored the data of 50 Schools with images alongside, each having a distinct ID"
     )
