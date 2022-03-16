@@ -6,6 +6,9 @@ const app= express()
 const allRoute= require('./router/router')
 app.use(express.json())
 app.use('/api/v1', allRoute )
+app.get("/", (req, res)=> {
+    res.end("welcome to my database")
+})
 
 
 app.listen(port, () => {
