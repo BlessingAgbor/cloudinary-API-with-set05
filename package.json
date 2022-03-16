@@ -20,5 +20,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlessingAgbor/cloudinary-API-with-set05.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BlessingAgbor/cloudinary-API-with-set05/issues"
+  },
+  "homepage": "https://github.com/BlessingAgbor/cloudinary-API-with-set05#readme",
   "description": ""
 }
